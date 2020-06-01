@@ -1,11 +1,14 @@
 import os
 import streamlit as st
+from typing import Optional
 
 import utils.streamlit.session_state as SessionState
 
 
 class LoginPage:
-    def __init__(self, session_image_path: str = os.environ.get("COMPANY_LOGO_URL")):
+    def __init__(
+        self, session_image_path: Optional[str] = os.environ.get("COMPANY_LOGO_URL")
+    ):
         # self.login_image_path = login_image_path
         self.session_image_path = session_image_path
         self.session = SessionState.get(user_name="", password="")
