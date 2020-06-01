@@ -1,2 +1,9 @@
-podatski.zip
+.venv/
+
+.mypy_cache
+**/__pycache__
+
+podatki.zip
 podatki/
+
+app/tmp_store/

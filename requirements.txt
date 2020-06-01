@@ -1,2 +1,7 @@
+cryptography
+imblearn
+plotly
+pymysql
 sklearn
-streamlit
+SQLAlchemy
+streamlit==0.55.0
